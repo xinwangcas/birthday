@@ -1,0 +1,202 @@
+﻿<html>
+<style>
+body{text-align:center}
+</style>
+<body>
+<h1>Happy birthday Grandma! WE LOVE YOU!!!</h1>
+<audio autoplay>
+  <!--source src="http://www.cse.lehigh.edu/~xiw412/birthday/woaiwojia.ogg" type="audio/ogg"-->
+  <source src="http://mp3.jiuku.com/mp3/57/56008.mp3" type="audio/mpeg">
+</audio>
+<a href="http://www.cse.lehigh.edu/~xiw412/birthday/woaiwojia.mp3">click here</a>
+</body>
+
+</html>
+<!--Simply copy and paste code into <BODY> of HTML page
+     Just above the close </BODY> tag. -->
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。图片路径可以是绝对路径或者相对路径
+var timeInterval=8000; //时间5秒
+var arr=new Array();
+arr[0]="http://www.cse.lehigh.edu/~xiw412/images/11.jpg"; 
+arr[1]="http://www.cse.lehigh.edu/~xiw412/images/12.jpg"; 
+arr[2]="http://www.cse.lehigh.edu/~xiw412/images/13.jpg"; 
+arr[3]="http://www.cse.lehigh.edu/~xiw412/images/14.jpg"; 
+arr[4]="http://www.cse.lehigh.edu/~xiw412/images/15.jpg"; 
+arr[5]="http://www.cse.lehigh.edu/~xiw412/images/16.jpg"; 
+arr[6]="http://www.cse.lehigh.edu/~xiw412/images/17.jpg"; 
+arr[7]="http://www.cse.lehigh.edu/~xiw412/images/18.jpg"; 
+arr[8]="http://www.cse.lehigh.edu/~xiw412/images/19.jpg"; 
+arr[9]="http://www.cse.lehigh.edu/~xiw412/images/20.jpg"; 
+arr[10]="http://www.cse.lehigh.edu/~xiw412/images/21.jpg"; 
+arr[11]="http://www.cse.lehigh.edu/~xiw412/images/22.jpg"; 
+arr[12]="http://www.cse.lehigh.edu/~xiw412/images/23.jpg"; 
+arr[13]="http://www.cse.lehigh.edu/~xiw412/images/24.jpg"; 
+arr[14]="http://www.cse.lehigh.edu/~xiw412/images/25.jpg"; 
+arr[15]="http://www.cse.lehigh.edu/~xiw412/images/26.jpg"; 
+arr[16]="http://www.cse.lehigh.edu/~xiw412/images/27.jpg"; 
+arr[17]="http://www.cse.lehigh.edu/~xiw412/images/28.jpg"; 
+arr[18]="http://www.cse.lehigh.edu/~xiw412/images/29.jpg"; 
+arr[19]="http://www.cse.lehigh.edu/~xiw412/images/30.jpg"; 
+arr[20]="http://www.cse.lehigh.edu/~xiw412/images/31.jpg"; 
+arr[21]="http://www.cse.lehigh.edu/~xiw412/images/32.jpg"; 
+arr[22]="http://www.cse.lehigh.edu/~xiw412/images/33.jpg"; 
+arr[23]="http://www.cse.lehigh.edu/~xiw412/images/34.jpg"; 
+arr[24]="http://www.cse.lehigh.edu/~xiw412/images/11.jpg";
+arr[25]="http://www.cse.lehigh.edu/~xiw412/images/0.jpg"; 
+arr[26]="http://www.cse.lehigh.edu/~xiw412/images/1.jpg"; 
+arr[27]="http://www.cse.lehigh.edu/~xiw412/images/2.jpg"; 
+arr[28]="http://www.cse.lehigh.edu/~xiw412/images/3.jpg"; 
+arr[29]="http://www.cse.lehigh.edu/~xiw412/images/4.jpg"; 
+arr[30]="http://www.cse.lehigh.edu/~xiw412/images/5.jpg"; 
+arr[31]="http://www.cse.lehigh.edu/~xiw412/images/6.jpg";
+arr[32]="http://www.cse.lehigh.edu/~xiw412/images/7.jpg";
+arr[33]="http://www.cse.lehigh.edu/~xiw412/images/520.jpg";
+arr[34]="http://www.cse.lehigh.edu/~xiw412/images/521.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=arr.length-1;
+    }
+    else
+    {
+        curIndex+=1;
+    }
+    obj.src=arr[curIndex];
+}
+</script>
+<style>
+.divcss5{text-align:center}
+</style>
+<body>
+<div class="divcss5">
+<img id=obj src="img/logo.gif" width=700 height=520 border=0>
+</div>
+</body>
+<SCRIPT type="text/javascript">
+
+/*
+Hearts Fall 1 - Drifter - JavaScript
+Visit www.rainbow.arch.scriptmania.com/scripts/
+  for this script and many more
+*/
+
+// **** Changed to Hearts from Snow ****
+
+// Set the number of snowflakes (more than 30 - 40 not recommended)
+var snowmax=12
+
+// Set the colors for the snow. Add as many colors as you like
+var snowcolor=new Array("#aaaacc","#ddddFF","#ccccDD","#ffffff","#ffc0cb")
+
+// Set the fonts, that create the snowflakes. Add as many fonts as you like
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+
+// **** CHANGE YOUR IMAGE HERE ****
+
+// Set the letter that creates your snowflake (recommended: * )
+var snowletter=" <img src=heart9.gif> "
+
+// Set the speed of sinking (recommended values range from 0.3 to 2)
+var sinkspeed=0.6
+
+// Set the maximal-size of your snowflaxes
+var snowmaxsize=40
+
+// Set the minimal-size of your snowflaxes
+var snowminsize=20
+
+// Set the snowing-zone
+// Set 1 for all-over-snowing, set 2 for left-side-snowing
+// Set 3 for center-snowing, set 4 for right-side-snowing
+var snowingzone=1
+
+///////////////////////////////////////////////////////////////////////////
+// CONFIGURATION ENDS HERE
+///////////////////////////////////////////////////////////////////////////
+
+
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)
+var browserok=ie5||ns6||opera
+
+function randommaker(range) {
+	rand=Math.floor(range*Math.random())
+    return rand
+}
+
+function initsnow() {
+	if (ie5 || opera) {
+      marginbottom = document.body.clientHeight
+      marginright = document.body.clientWidth
+   }
+   else if (ns6) {
+      marginbottom = window.innerHeight
+      marginright = window.innerWidth
+   }
+	var snowsizerange=snowmaxsize-snowminsize
+	for (i=0;i<=snowmax;i++) {
+		crds[i] = 0;
+    	lftrght[i] = Math.random()*15;
+    	x_mv[i] = 0.03 + Math.random()/10;
+		snow[i]=document.getElementById("s"+i)
+		snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+		snow[i].size=randommaker(snowsizerange)+snowminsize
+		snow[i].style.fontSize=snow[i].size
+		snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+		snow[i].sink=sinkspeed*snow[i].size/5
+		if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+		if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+		if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+		if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+		snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+		snow[i].style.left=snow[i].posx
+		snow[i].style.top=snow[i].posy
+	}
+	movesnow()
+}
+
+function movesnow() {
+	for (i=0;i<=snowmax;i++) {
+		crds[i] += x_mv[i];
+		snow[i].posy+=snow[i].sink
+		snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+		snow[i].style.top=snow[i].posy
+
+		if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+			if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+			if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+			if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+			if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+			snow[i].posy=0
+		}
+	}
+	var timer=setTimeout("movesnow()",50)
+}
+
+for (i=0;i<=snowmax;i++) {
+	document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+	window.onload=initsnow
+	changeImg()
+}
+</script>
+
+<p><font face="arial" size="-2">Family use only. </font><br><font face="arial, helvetica" size="-2"><a href="http://rainbow.arch.scriptmania.com/scripts/">Happy Birthday!</a></font></p>
+
